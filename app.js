@@ -37,6 +37,8 @@ app.get('/decks/:id/:num', routes.slide);
 app.get('/prez', routes.prez);
 app.get('/prez/:id', routes.pres);
 
+console.log('here I go');
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
